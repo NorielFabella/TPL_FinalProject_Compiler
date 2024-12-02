@@ -1,5 +1,3 @@
-package TPLProject;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -20,13 +18,13 @@ public class ClearTextAction implements ActionListener {
 
 
         compiler.getOpenFileButton().setEnabled(true);
-        compiler.setButtonEnabled(compiler.getOpenFileButton(), true);
+        //compiler.setButtonEnabled(compiler.getOpenFileButton(), true);
         compiler.getLexicalAnalysisButton().setEnabled(false);
-        compiler.setButtonEnabled(compiler.getLexicalAnalysisButton(), false);
+       // compiler.setButtonEnabled(compiler.getLexicalAnalysisButton(), false);
         compiler.getSyntaxAnalysisButton().setEnabled(false);
-        compiler.setButtonEnabled(compiler.getSyntaxAnalysisButton(), false);
+     //   compiler.setButtonEnabled(compiler.getSyntaxAnalysisButton(), false);
         compiler.getSemanticAnalysisButton().setEnabled(false);
-        compiler.setButtonEnabled(compiler.getSemanticAnalysisButton(), false);
+     //   compiler.setButtonEnabled(compiler.getSemanticAnalysisButton(), false);
         compiler.getClearButton().setEnabled(false);
 
     }
