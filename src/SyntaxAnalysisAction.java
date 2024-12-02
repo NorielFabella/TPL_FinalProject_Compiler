@@ -1,5 +1,3 @@
-package TPLProject;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -66,9 +64,7 @@ public class SyntaxAnalysisAction implements ActionListener {
         if (isSyntaxValid) {
             compiler.getResultTextArea().setText("Success: Syntax is valid.");
             compiler.getSyntaxAnalysisButton().setEnabled(false);
-            compiler.setButtonEnabled(compiler.getSyntaxAnalysisButton(), false);
             compiler.getSemanticAnalysisButton().setEnabled(true);
-            compiler.setButtonEnabled(compiler.getSemanticAnalysisButton(), true);
         } else {
             compiler.getResultTextArea().setText("Error: Syntax is invalid.");
             compiler.getSyntaxAnalysisButton().setEnabled(false);
@@ -87,4 +83,3 @@ public class SyntaxAnalysisAction implements ActionListener {
         return count;
     }
 }
-
