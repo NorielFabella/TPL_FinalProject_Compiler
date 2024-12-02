@@ -1,5 +1,3 @@
-package TPLProject;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -40,10 +38,10 @@ public class OpenFileAction implements ActionListener {
 
 
             compiler.getOpenFileButton().setEnabled(false);
-            compiler.setButtonEnabled(compiler.getOpenFileButton(), false);
+           // compiler.setButtonEnabled(compiler.getOpenFileButton(), false);
             compiler.getLexicalAnalysisButton().setEnabled(true);
-            compiler.setButtonEnabled(compiler.getLexicalAnalysisButton(), true);
-            compiler.setButtonEnabled(compiler.getClearButton(), true);
+           // compiler.setButtonEnabled(compiler.getLexicalAnalysisButton(), true);
+          //  compiler.setButtonEnabled(compiler.getClearButton(), true);
             compiler.getSyntaxAnalysisButton().setEnabled(false);
             compiler.getSemanticAnalysisButton().setEnabled(false);
             compiler.getClearButton().setEnabled(true);
